@@ -22,13 +22,14 @@ public class Main {
 	static TheInterview person = new TheInterview(); 
 	
 	//Main method.
-	public static void main(String[] args) {a
+	public static void main(String[] args) {
 		numApplicants = 0; 
 		
 		//Execute code specified...if error is found, execute catch() 
-		try {
+		while(true) {
 			//Repeat indefinitely.
-			while(true) {
+			try {
+				System.out.println(" \t ----------------------------------");
 				System.out.println(" \t Apply for membership to the club..");
 				System.out.println(" \t ----------------------------------");
 			
@@ -64,17 +65,27 @@ public class Main {
 				}
 				*/
 				
+				if(ageSwitch == 1 && isMale == true) {
+					System.out.println("You may join the FJ Robotics Team!");
+					numApplicants++; 
+				}
+				else if(ageSwitch == 2) {
+					System.out.println("You must join the FIRST Lego League.");
+				}
+				else if(ageSwitch == 3) {
+					System.out.println("You should look for a club at your University!");
+				}
+				
 			}
-		
+			//Handle any unwanted inputs. 
+			catch(InputMismatchException ex) {
+				System.out.println("Please enter the proper information.");
+			}
+			
+			//For any additional errors found, add more catch statements.
 		}
-		//Handler for any unwanted inputs. 
-		catch(InputMismatchException ex) {
-			System.out.println("Please enter the proper information!");
-		}
-		
-		//Add any extra error's found here (catch{} statements).
 	}
-	
+
 	public static void getAgePart2() {
 		age = person.getAge(); 
 		ageSwitch = 0; 

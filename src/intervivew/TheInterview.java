@@ -31,22 +31,9 @@ public class TheInterview {
 		System.out.println("Enter your age, in years: ");
 		age = sc.nextInt(); 
 		
-		/*
-		if(age < 14) {
-			System.out.println("You must join FIRST Lego League.");
-			return -1; 
-		}
-		else if(age > 18) {
-			System.out.println("You will need to find a Robotics Club at your University.");
-			return -1; 
-		} else {
-			return age; 
-		}
-		*/
-		
 		//Used in switch/case statement in the Main class. 
 		if(age > 14 && age < 18) {
-			return 1;
+			return 1; 
 		}
 		else if(age < 14) {
 			return 2;
