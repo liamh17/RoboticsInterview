@@ -1,0 +1,52 @@
+while(true) 
+
+Enter your name:
+ -save the input, "name"
+ -own method, String
+ 
+                |
+                V
+    
+Enter your age: 
+ -save the input, "age"
+ -own method, int
+ 
+                |
+                V
+    
+Enter your gender:
+ -save the input, "gender"
+ -own method, String(boolean?)
+ 
+                |
+                V
+
+BEGIN COUNTING NUMBER OF APPLICANTS
+memberNum = 0; 
+
+Is age greater than 14? 
+Yes                           No
+ |                            |
+ V                            V
+ Contine...                   You must join the FIRST Lego League.
+ 
+                |
+                V
+
+Is the age less than 18?
+Yes                           No
+ |                            |
+ V                            V
+Continue...                   You must look for a club at your local University.
+
+                |
+                V
+               
+What is their gender?
+Male                          No
+ |                            |
+ V                            V
+You may join FJ Robotics.     You must join the BambiBotz!
+memberNum++;
+
+recycle through loop
