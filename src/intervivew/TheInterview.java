@@ -33,7 +33,6 @@ public class TheInterview {
 		}
 	}
 	public boolean getSex() {
-		
 		try {
 			System.out.println("Are you a male? Enter 'true' or 'false.'");		
 			isMale = sc.nextBoolean(); 
@@ -50,6 +49,6 @@ public class TheInterview {
 			System.out.println("Please enter 'true' or 'false'!");
 		}
 		
-		return true; 
+	    return true; 
 	}
 }
