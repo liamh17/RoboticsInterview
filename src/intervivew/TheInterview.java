@@ -41,7 +41,7 @@ public class TheInterview {
 		else if(age > 18) {
 			return 3; 
 		} else {
-			return 4; //Useless (in a way)
+			return 4; //Useless 
 		}
 	}
 	//Method to handle the sex of the person being interviewed.
