@@ -90,7 +90,7 @@ public class Main {
 		age = person.getAge(); 
 		ageSwitch = 0; 
 		
-		//Does the age entered match the parameters needed? 
+		//Does the age entered match the conditional required? 
 		switch(age) {
 			case 1:
 				ageSwitch += 1; 
