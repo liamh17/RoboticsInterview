@@ -65,15 +65,24 @@ public class Main {
 				}
 				*/
 				
+				//Is the person of between 14 & 18, and are they male or female?
+				//              if yes and male...they may join the team. 
 				if(ageSwitch == 1 && isMale == true) {
 					System.out.println("You may join the FJ Robotics Team!");
 					numApplicants++; 
 				}
+				//Is the person in elementary school?
+				//              if yes...send them to the FIRST Lego League.
 				else if(ageSwitch == 2) {
 					System.out.println("You must join the FIRST Lego League.");
 				}
+				//Is the person in college/university?
+				//              if yes...send them to look for a club at their University.
 				else if(ageSwitch == 3) {
 					System.out.println("You should look for a club at your University!");
+				} else {
+					//Add something here (i.e. what do they do if they meet none of these conditions
+					//         although it is not likely they will
 				}
 				
 			}
