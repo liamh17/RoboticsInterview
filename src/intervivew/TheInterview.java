@@ -31,13 +31,16 @@ public class TheInterview {
 		System.out.println("Enter your age, in years: ");
 		age = sc.nextInt(); 
 		
-		//Used in switch/case statement in the Main class. 
+		//Used in switch/case statement in the Main class.
+		//Are they between 14 and 18?
 		if(age > 14 && age < 18) {
 			return 1; 
 		}
+		//Is their age less than 14? (i.e. are they in elementary school?) 
 		else if(age < 14) {
 			return 2;
 		}
+		//Is ther age greater than 18? (i.e. are they in college?)
 		else if(age > 18) {
 			return 3; 
 		} else {
